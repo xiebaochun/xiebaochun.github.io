@@ -5,19 +5,22 @@
 	texture.anisotropy = 16;
 	texture.needsUpdate = true;
 
+var Text3D=function(scene){
+   this.scene=scene;
+}
 
-    var 3dText={
+   Text3D.prototype={
          
         scene:null,
         textMesh:null,
-        init:function(){
+        init:function(text){
               console.log("into 3dText init");
 		     // prepare text geometry
 		    var textGeometry = new THREE.TextGeometry(text, {
-		        size: 60, // Font size
+		        size: 300, // Font size
 		        height: 20, // Font height (depth)
 		        font: 'droid serif', // Font family
-		        weight: 'bold', // Font weight
+		        weight: 'bold', // Font weight normal or bold
 		        style: 'normal', // Font style
 		        curveSegments: 1, // Amount of curve segments
 		        bevelThickness: 5, // Bevel thickness
@@ -32,7 +35,8 @@
 		    var materialSide = new THREE.MeshPhongMaterial({ map: texture, color: 0xff00ff, emissive: 0x444444 });
 
 		    // create mesh object
-		    var textMaterial = new THREE.MeshFaceMaterial([ materialFront, materialSide ]);
+		    //var textMaterial = new THREE.MeshFaceMaterial([ materialFront, materialSide ]);
+		    var textMaterial= new THREE.MeshBasicMaterial({color: 0x000000});
 		    this.textMesh = new THREE.Mesh(textGeometry, textMaterial);
 		    this.textMesh.castShadow = true;
         },
@@ -58,7 +62,8 @@
 		    var materialSide = new THREE.MeshPhongMaterial({ map: texture, color: 0xff00ff, emissive: 0x444444 });
 
 		    // create mesh object
-		    var textMaterial = new THREE.MeshFaceMaterial([ materialFront, materialSide ]);
+		    //var textMaterial = new THREE.MeshFaceMaterial([ materialFront, materialSide ]);
+		    var textMaterial= new THREE.MeshBasicMaterial({color: 0x00ff00});
 		    var textMesh = new THREE.Mesh(textGeometry, textMaterial);
 		    textMesh.castShadow = true;
 
@@ -67,8 +72,8 @@
 		    textMesh.rotation.x = -0.3;
 		    scene.add(textMesh);
 		},
-		drawWithRotation:function(x,y,z,rotationX,rotationY,rotationZ){
-			this.init();
+		drawWithRotation:function(x,y,z,rotationX,rotationY,rotationZ,text){
+			this.init(text);
 
 		    // place the mesh in the certain position, rotate it and add to the scene
 		    this.textMesh.position.set(x, y, z);
@@ -76,10 +81,7 @@
 		    this.textMesh.rotation.y =rotationY;
 		    this.textMesh.rotation.z =rotationZ;
 		    this.scene.add(this.textMesh);
-		},
-		setScene:function(scene)
-		{
-			this.scene=scene;
 		}
+		
 
     };
