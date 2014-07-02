@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>一叶斋</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    
+    <script src="webgl-utils.js" type="text/javascript"></script>
+    <script src="glMatrix-0.9.5.min.js" type="text/javascript"></script>
+    
+    <!-- 片元着色器 -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        precision mediump float;
+        
+        varying vec4 vColor;
+        varying vec2 vTextureCoord;
+        
+        uniform bool usePureColor;
+        uniform sampler2D uSampler;
+        
+        void main(void){
+            if(usePureColor){gl_FragColor = vColor;}
+            else{gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));}
+        }
+    </script>
+    
+    <!-- 顶点着色器 -->
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 aVertexPosition;
+        attribute vec4 aVertexColor;
+        attribute vec2 aTextureCoord;
+        
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+        
+        varying vec4 vColor;
+        varying vec2 vTextureCoord;
+        
+        void main(void){
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+            vColor = aVertexColor;
+            vTextureCoord = aTextureCoord;
+        }
+    </script>
+        
+    <script src="gameSnake_glEnviroment.js" type="text/javascript"></script>
+    <script src="gameSnake_BufferFactory.js" type="text/javascript"></script>
+    <script src="gameSnake_Main.js" type="text/javascript"></script>
+    <script src="gameSnake_Snake.js" type="text/javascript"></script>
+    <script src="gameSnake_Frame.js" type="text/javascript"></script>
+    <script src="gameSnake_Candies.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="bodyContent">
+	    <div id="head" class="block">
+		<h2 class="site-name">贪吃蛇</h2>
+
+	</div>
+	
+	<div id="center">
+	    <div>
+	        <p>更多的说明见页面底部。点击<button style="display:inline" onclick="gameStart();">这个按钮</button>开始游戏。犯规<span id="mistakeNumber" style="display:inline" style="font-size:30px; font-family: Times New Roman">0</span>次。</p>
+	        <canvas id="theCanvas" width="960" height="680"></canvas>
+	        <p>运行WebGL需要支持WebGL的浏览器，包括Google Chrome 9及以上版本，Mozilla Firefox 4及以上版本，Safari 5.1及以上版本。IE不支持WebGL，不过你可以通过下载<a href="www.iewebgl.com">IEWebGL插件</a>来运行WebGL。</p>
+	        <p>这个游戏中，只能通过左、右方向键控制贪吃蛇的方向，注意这里的“左”和“右”是相对于贪吃蛇自身的前进方向而言的；游戏区域持续地缓慢旋转，所以你可能要适应一下。</p>
+	        <p>游戏不会因为贪吃蛇撞到边缘或是撞到自己而结束，但是你每次这样做，程序都会记录下来并显示在游戏界面上方的文本中。事实上，游戏不会结束，除非你后退或者关闭界面，但还是尽量遵守原始版本贪吃蛇的规则吧。</p>
+	    </div>
+	</div>
+    </div>
+
+
+</body>
+</html>
