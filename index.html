@@ -16,7 +16,7 @@
     
     
     <script type="text/javascript" src="http://xiebaochun.github.io/javascripts/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="http://xiebaochun.github.io/http://xiebaochun.github.io/javascripts/picbox.js"></script>
+    <script type="text/javascript" src="http://xiebaochun.github.io/javascripts/picbox.js"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -324,26 +324,5 @@ $("#nav_home").addClass("c");
         document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
    </script>
         <!-- Baidu Button END -->
-
-  <script>
-      window.onload=function(){
-      $('.one_fourth_box').each(function(){
-            $(this).hover(function(){
-              $(this).children('.ofb-img').stop(true).animate({top:'-135px'})
-              $(this).children('.ofb-img-bottom').stop(true).animate({top:'25px'})
-              $(this).children('.ofb-text').stop(true).animate({top:'160px'})
-              $(this).children('.ofb-text-top').stop(true).animate({top:'25px'})
-              $(this).children('.ofb-bg').stop(true,true).fadeIn();
-            },function(){
-              $(this).children('.ofb-img').stop(true).animate({top:'25px'})
-              $(this).children('.ofb-img-bottom').stop(true).animate({top:'160px'})
-              $(this).children('.ofb-text').stop(true).animate({top:'25px'})
-              $(this).children('.ofb-text-top').stop(true).animate({top:'-110px'})
-              $(this).children('.ofb-bg').stop(true,true).fadeOut();
-            })
-          })
-
-    };
-  </script>
 
 </html> 
