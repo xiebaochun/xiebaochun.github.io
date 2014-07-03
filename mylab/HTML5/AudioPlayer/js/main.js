@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 
         $('.playlist li').removeClass('active');
         elem.addClass('active');
-        playAudio();
+        //playAudio();
     }
     function playAudio() {
         song.play();
