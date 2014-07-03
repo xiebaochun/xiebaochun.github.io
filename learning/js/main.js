@@ -5,9 +5,9 @@ $(document).ready(function(){
 
         	$(this).hover(
         		function(){
-        			$("#left_nav li").each(function(){
-        			  $(this).removeClass("left_border_red");	
-        			});
+	        			$("#left_nav li").each(function(){
+	        			  $(this).removeClass("left_border_red");	
+	        			});
         	            //console.log("enter hover");
 	                   $(this).addClass("left_border_red");
 	        		},function(){
