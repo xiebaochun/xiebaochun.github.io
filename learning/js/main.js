@@ -1,4 +1,6 @@
 $(document).ready(
+
+	    console.log("enter jquery ready");
         $("#left_nav li").each(function(){
 
         	$(this).hover(
