@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
 
         $('.player .title').text(title);
         $('.player .artist').text(artist);
-        $('.player .cover').css('background-image','url(http://git.oschina.net/juerry/websiteimages/raw/master/html5audioplayer/cover/' + cover+')');;
+        $('.player .cover').css('background-image','url(./images/' + cover+')');;
 
         song = new Audio('data/' + url);
 
