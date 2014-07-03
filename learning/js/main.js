@@ -1,4 +1,4 @@
-$(document).ready(
+$(document).ready(function(){
 
 	    console.log("enter jquery ready");
         $("#left_nav li").each(function(){
@@ -15,7 +15,7 @@ $(document).ready(
 	                    $(this).removeClass("left_border_red");
 	        		}
         	);
-        })
+        });
 
 
-	);
+	});
