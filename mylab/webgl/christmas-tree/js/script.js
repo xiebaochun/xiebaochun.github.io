@@ -1,13 +1,4 @@
-/**
- *
- * Christmas tree with three.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Script Tutorials
- * http://www.script-tutorials.com/
- */
+
 
 var container;
 var camera, scene, renderer, group;
@@ -34,7 +25,7 @@ function init() {
     info.style.top = '10px';
     info.style.width = '100%';
     info.style.textAlign = 'center';
-    info.innerHTML = 'This Christmas tree is prepared by <a target="_blank" href="http://www.script-tutorials.com/">Script Tutorials</a> team.<br/>Drag to spin';
+    //info.innerHTML = 'This Christmas tree is prepared by <a target="_blank" href="http://www.script-tutorials.com/">Script Tutorials</a> team.<br/>Drag to spin';
     container.appendChild(info);
 
     // initialize the scene
