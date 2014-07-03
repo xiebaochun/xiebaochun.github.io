@@ -11,7 +11,7 @@ $(document).ready(
 	                    $(this).removeClass("left_border_red");
 	        		}
         	);
-        });
+        })
 
 
 	);
