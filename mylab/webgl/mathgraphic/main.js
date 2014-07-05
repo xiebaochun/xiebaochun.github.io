@@ -4,7 +4,7 @@
 
 	var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 10000);
 
-	var renderer = new THREE.WebGLRenderer();
+	this.renderer = new THREE.WebGLRenderer({antialias:true, alpha: false});
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 
@@ -34,6 +34,13 @@
 
 	camera.lookAt({x:0,y:0,z:0});
 
+   
+   // events
+        THREEx.WindowResize(this.renderer, this.camera);
+   // prepare controls (OrbitControls)
+        this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+        this.controls.target = new THREE.Vector3(0, 0, 0);
+
    //draw the 3s Text
 	var text3d=new Text3D(scene);
 	text3d.drawWithRotation(500,45,0,0,0,0,"x");
@@ -55,17 +62,18 @@
 
 	function initCoordination()
 	{
-		var geometry_z = new THREE.CubeGeometry(2,2,500);
+		var coordinationWeight=10;
+		var geometry_z = new THREE.CubeGeometry(coordinationWeight,coordinationWeight,500);
 		var material_z = new THREE.MeshBasicMaterial({color: 0x00ff00});
 		var axis_z = new THREE.Mesh(geometry_z, material_z);
 		axis_z.position.set(0,0,250);
 
-		var geometry_x = new THREE.CubeGeometry(500,2,2);
+		var geometry_x = new THREE.CubeGeometry(500,coordinationWeight,coordinationWeight);
 		var material_x = new THREE.MeshBasicMaterial({color: 0x0000ff});
 		var axis_x=new THREE.Mesh(geometry_x,material_x);
 		axis_x.position.set(250,0,0);
 
-		var geometry_y = new THREE.CubeGeometry(2,500,2);
+		var geometry_y = new THREE.CubeGeometry(coordinationWeight,500,coordinationWeight);
 		var material_y = new THREE.MeshBasicMaterial({color: 0xff0000});
 		var axis_y=new THREE.Mesh(geometry_y,material_y);
 		axis_y.position.set(0,250,0);

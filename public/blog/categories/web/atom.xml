@@ -4,7 +4,7 @@
   <title><![CDATA[Category: web | 微个日光日]]></title>
   <link href="http://xiebaochun.github.io/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://xiebaochun.github.io/"/>
-  <updated>2014-07-01T13:22:53+08:00</updated>
+  <updated>2014-07-03T19:11:01+08:00</updated>
   <id>http://xiebaochun.github.io/</id>
   <author>
     <name><![CDATA[Nicholas]]></name>
@@ -78,12 +78,14 @@ document.body.appendChild(renderer.domElement);
 var scene=new THREE.Scene;
 </code></pre>
 
-<p>倒数第二行，你也可以用你喜欢的Jquery来向页面中插入canvas元素：</p>
+<p>在倒数第二行，你也可以用你喜欢的Jquery来向页面中插入canvas元素：</p>
 
 <pre><code>$('body').append(renderer.domElement));
 </code></pre>
 
-<h2 id="step3">step3：渲染立方体</h2>
+<h2 id="step3">step3：添加立方体</h2>
+
+<p>就像学习任何一门语言一样，一开始通常会写一个hello world！的demo。学习3D引擎，通常会绘制一个立方体。</p>
 
 <p><a href="http://code.tutsplus.com/tutorials/webgl-with-threejs-basics--net-35688">http://code.tutsplus.com/tutorials/webgl-with-threejs-basics–net-35688</a></p>
 
