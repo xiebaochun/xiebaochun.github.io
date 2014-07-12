@@ -1,8 +1,10 @@
 
+    var coordinationWeight=30;
+    var coordinationLength=2000;
 
 	var scene = new THREE.Scene();
 
-	var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 10000);
+	var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 20000);
 
 	this.renderer = new THREE.WebGLRenderer({antialias:true, alpha: false});
 	renderer.setSize(window.innerWidth, window.innerHeight);
@@ -25,10 +27,10 @@
 	//ground.position.y = -20;
 	ground.rotation.x = - Math.PI / 2;
 	ground.receiveShadow = true;
-	scene.add(ground);
+	//scene.add(ground);
 
 
-	camera.position.z = 1800;
+	camera.position.z = 9800;
 	camera.position.x=1000;
 	camera.position.y=1000;
 
@@ -43,9 +45,9 @@
 
    //draw the 3s Text
 	var text3d=new Text3D(scene);
-	text3d.drawWithRotation(500,45,0,0,0,0,"x");
-	text3d.drawWithRotation(45,300,0,0,0,0,"y");
-	text3d.drawWithRotation(45,0,450,0.6,0,0,"z");
+	text3d.drawWithRotation(coordinationLength,45,0,0,0,0,"x");
+	text3d.drawWithRotation(45,coordinationLength,0,0,0,0,"y");
+	text3d.drawWithRotation(45,0,coordinationLength,-Math.PI/2,0,0,"z");
 
 	var render = function () {
 		requestAnimationFrame(render);
@@ -62,31 +64,40 @@
 
 	function initCoordination()
 	{
-		var coordinationWeight=10;
-		var geometry_z = new THREE.CubeGeometry(coordinationWeight,coordinationWeight,500);
+		
+		var geometry_z = new THREE.CubeGeometry(coordinationWeight,coordinationWeight,coordinationLength);
 		var material_z = new THREE.MeshBasicMaterial({color: 0x00ff00});
 		var axis_z = new THREE.Mesh(geometry_z, material_z);
-		axis_z.position.set(0,0,250);
+		axis_z.position.set(0,0,coordinationLength/2);
 
-		var geometry_x = new THREE.CubeGeometry(500,coordinationWeight,coordinationWeight);
+		var geometry_x = new THREE.CubeGeometry(coordinationLength,coordinationWeight,coordinationWeight);
 		var material_x = new THREE.MeshBasicMaterial({color: 0x0000ff});
 		var axis_x=new THREE.Mesh(geometry_x,material_x);
-		axis_x.position.set(250,0,0);
+		axis_x.position.set(coordinationLength/2,0,0);
 
-		var geometry_y = new THREE.CubeGeometry(coordinationWeight,500,coordinationWeight);
+		var geometry_y = new THREE.CubeGeometry(coordinationWeight,coordinationLength,coordinationWeight);
 		var material_y = new THREE.MeshBasicMaterial({color: 0xff0000});
 		var axis_y=new THREE.Mesh(geometry_y,material_y);
-		axis_y.position.set(0,250,0);
+		axis_y.position.set(0,coordinationLength/2,0);
 
 
 
 		scene.add(axis_y);
 		scene.add(axis_x);
 		scene.add(axis_z);
+
+		drawLine();
 		};
 
 
 	function drawLine()
 	{
-
+       for(i=0;i<1000;i++)
+       {
+            var n=new THREE.CubeGeometry(30,30,30);
+            var m = new THREE.MeshBasicMaterial({color: 0x0000ff});
+		    var x=new THREE.Mesh(n,m);
+		    x.position.set(i*100,Math.sin(i)*600,0);
+		    scene.add(x);
+       }
 	}
