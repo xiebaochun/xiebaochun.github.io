@@ -1,0 +1,30 @@
+
+.right_border_gray{
+    border-right: 1px solid #fff !important;	
+}
+.right-content{
+		position:relative;
+		left:199px;
+		width:1000px;
+		height:auto;
+		overflow:visible;
+		border:1px solid #ccc;
+}
+.right-content ul{
+	 width:1000px; 
+	 border-top:1px solid #ddd; 
+	 border-left:1px solid #ddd; 
+}
+.right-content ul li{
+	 list-style:none; 
+	 width:190px; 
+	 height:160px; 
+	 border-right:1px solid #d55;
+	 border-bottom:1px solid #d33;
+	 display:inline-block;
+	 margin: 20px;
+/*	 float:left;*/
+}
+/*.right-content ul li:hover{
+	border: 1px solid #993333;
+}*/
