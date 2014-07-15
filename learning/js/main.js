@@ -13,7 +13,7 @@ $(document).ready(function(){
         	            //console.log("enter hover");
 	                   $(this).addClass("left_border_red");
 	                   $(this).addClass("right_border_gray");
-                            alert($(this).index(this));
+                            alert($(this).parent('#left_nav').index(this));
 	        		},function(){
 	        			//console.log("out hover");
 	                   // $(this).removeClass("left_border_red");
