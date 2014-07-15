@@ -21,7 +21,7 @@ $(document).ready(function(){
         	);
         });
 
-        getContent("books/basis.html");
+        getContent("../../ebook/pdf/basis.html");
         function getContent(filePath){
         	//$("#right").attr("src","../../ebook/pdf/pdf.js/web/viewer.html");
         	var xmlhttp;
@@ -44,7 +44,7 @@ $(document).ready(function(){
         	         //$(".right-content").	
         	         document.getElementById("right").innerHTML=xmlhttp.responseText;
         		     $("#book_01").click(function(){
-				        	getContent("books/pdf.js/web/viewer.html");
+				        	getContent("../../ebook/pdf/pdf.js/web/viewer.html");
 				        });
         		}
         	}
