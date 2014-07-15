@@ -23,7 +23,7 @@ $(document).ready(function(){
 
         getContent("books/basis.html");
         function getContent(filePath){
-        	$("#right").attr("src","../../ebook/pdf/pdf.js/web/viewer.html");
+        	//$("#right").attr("src","../../ebook/pdf/pdf.js/web/viewer.html");
         	var xmlhttp;
         	if(window.XMLHttpRequest){
         		xmlhttp=new XMLHttpRequest();
