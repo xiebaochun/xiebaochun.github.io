@@ -1,6 +1,6 @@
 $(document).ready(function(){
         var cateList=["design","front-end","android","symbian","linux","hardware","basis"];
-        alert(cateList[0]);
+        //alert(cateList[0]);
 	    //console.log("enter jquery ready");
         $("#left_nav li").each(function(){
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
         	            //console.log("enter hover");
 	                   $(this).addClass("left_border_red");
 	                   $(this).addClass("right_border_gray");
-
+                            alert($(this).index(this));
 	        		},function(){
 	        			//console.log("out hover");
 	                   // $(this).removeClass("left_border_red");
