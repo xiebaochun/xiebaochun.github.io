@@ -44,7 +44,8 @@ $(document).ready(function(){
         	         //$(".right-content").	
         	         document.getElementById("right").innerHTML=xmlhttp.responseText;
         		     $("#book_01").click(function(){
-				        	getContent("../../ebook/pdf/pdf.js/web/viewer.html");
+				        	//getContent("../../ebook/pdf/pdf.js/web/viewer.html");
+                                                window.open("../../ebook/pdf/pdf.js/web/viewer.html");
 				        });
         		}
         	}
