@@ -21,8 +21,9 @@ $(document).ready(function(){
         	);
         });
 
-        getContent();
-        function getContent(){
+        getContent("books/basis.html");
+        function getContent(filePath){
+        	$("#right").attr("src","books/pdf.js/web/viewer.html");
         	var xmlhttp;
         	if(window.XMLHttpRequest){
         		xmlhttp=new XMLHttpRequest();
@@ -31,7 +32,7 @@ $(document).ready(function(){
         		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
         		console.log("enable the ActiveXObject")
         	}
-        	xmlhttp.open("GET","test.text",true);
+        	xmlhttp.open("GET",filePath,true);
         	xmlhttp.send();
         	console.log("xmlhttp readyState:"+xmlhttp.readyState);
         	console.log(xmlhttp);
@@ -42,11 +43,19 @@ $(document).ready(function(){
         	         console.log(xmlhttp.response+"serger");	
         	         //$(".right-content").	
         	         document.getElementById("right").innerHTML=xmlhttp.responseText;
+        		     $("#book_01").click(function(){
+				        	getContent("books/pdf.js/web/viewer.html");
+				        });
         		}
         	}
         	//var responseText=xmlhttp.responseText;
         	
         }
+        
+        // function showBook(){
+        // 	alert("");
+        // }
+       
 
 
 	});

@@ -13,6 +13,7 @@
 	float: left;
 	border-top: 1px solid #ccc;
 	z-index: 1;
+	display: inline-block;
 	
 	
 }
@@ -43,7 +44,8 @@
 }
 .left_border_red{
 	color: #ff5b97 !important;
-	border-left: 3px solid #ff5b97 !important;
+	border-left: 10px solid #ff5b97 !important;
+	-webkit-transition: all 0.2s ease-in-out;
 }
 
 .design_wrap{
