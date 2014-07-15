@@ -13,7 +13,8 @@ $(document).ready(function(){
         	            //console.log("enter hover");
 	                   $(this).addClass("left_border_red");
 	                   $(this).addClass("right_border_gray");
-                            alert($(this).parent('#left_nav').index(this));
+                            //alert($("#left_nav li").index(this));
+                            getContent("../../ebook/pdf/"+cateList[$("#left_nav li").index(this)]+".html");
 	        		},function(){
 	        			//console.log("out hover");
 	                   // $(this).removeClass("left_border_red");
