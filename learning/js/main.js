@@ -45,10 +45,20 @@ $(document).ready(function(){
         	         console.log(xmlhttp.response+"serger");	
         	         //$(".right-content").	
         	         document.getElementById("right").innerHTML=xmlhttp.responseText;
-        		     $("#book_01").click(function(){
-				        	//getContent("../../ebook/pdf/pdf.js/web/viewer.html");
-                                                window.open("../../ebook/pdf/pdf.js/web/viewer.html");
-				        });
+        		  //    $("#book_01").click(function(){
+				        // 	//getContent("../../ebook/pdf/pdf.js/web/viewer.html");
+            //                                     window.open("../../ebook/pdf/pdf.js/web/viewer.html");
+				        // });
+                     $(".table .item").each(function(){
+                         $(this).click(function(){
+                            // alert("haha");
+                            // alert($(this).children().eq(0).html());
+                             document.cookie = "name="+$(this).children().eq(0).html()+";path=/";  
+                             window.open("../../ebook/pdf/pdf.js/web/viewer.html");
+                         });
+                          
+
+                     });
         		}
         	}
         	//var responseText=xmlhttp.responseText;

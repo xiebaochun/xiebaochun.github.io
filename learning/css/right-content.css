@@ -20,9 +20,28 @@
     width: 150px;
     height:200px;
 	display: inline-block;
-	background: #edd;
+	background: #fff;
 	margin: 20px;
+	border: 1px solid #999;
+	border-left: 8px solid #999;
+	border-top-right-radius:10px 10px; 
+	box-shadow:2px 1px 5px #aaa;
+	font-size: 18px;
+	color:#aa6;	
+	text-align: center;
 }
+.right-content .item:hover{
+	border-left: 8px solid #777;
+	box-shadow:2px 1px 5px #ff5b97;
+	color:#ff5b97;
+}
+.right-content .item p{
+   
+   
+   margin: 5px;
+   margin-top: 50px;
+}
+
 /*.right-content ul li:hover{
 	border: 1px solid #993333;
 }*/
