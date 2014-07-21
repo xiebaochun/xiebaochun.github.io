@@ -23,7 +23,7 @@ $(document).ready(function(){
         	);
         });
 
-        getContent("../../ebook/pdf/basis.html");
+        getContent("../../ebook/pdf/design.html");
         function getContent(filePath){
         	//$("#right").attr("src","../../ebook/pdf/pdf.js/web/viewer.html");
         	var xmlhttp;

@@ -87,17 +87,56 @@
 		scene.add(axis_z);
 
 		drawLine();
+		drawLineK();
+		//drawPlane();
 		};
 
 
+	function drawLine1()
+	{
+       for(i=0;i<3000;i++)
+       {
+            var n=new THREE.CubeGeometry(5,5,5);
+            var m = new THREE.MeshBasicMaterial({color: 0x000000});
+		    var x=new THREE.Mesh(n,m);
+		    x.position.set(i,Math.sin(i/100)*100,0);
+		    scene.add(x);
+       }
+	}
 	function drawLine()
 	{
-       for(i=0;i<1000;i++)
+       for(i=0;i<300;i++)
        {
-            var n=new THREE.CubeGeometry(30,30,30);
-            var m = new THREE.MeshBasicMaterial({color: 0x0000ff});
+            var n=new THREE.CubeGeometry(5,5,5);
+            var m = new THREE.MeshBasicMaterial({color: 0x000000});
 		    var x=new THREE.Mesh(n,m);
-		    x.position.set(i*100,Math.sin(i)*600,0);
+		    x.position.set(i-Math.sin(i/1000)*1000,1000-Math.cos(i/1000)*1000,4000*Math.sin(i/2000));
 		    scene.add(x);
+       }
+	}
+	function drawLineK()
+	{
+       for(i=0;i<300;i++)
+       {
+            var n=new THREE.CubeGeometry(5,5,5);
+            var m = new THREE.MeshBasicMaterial({color: 0x000000});
+		    var x=new THREE.Mesh(n,m);
+		    x.position.set(i,i-Math.PI*500+2000,i*Math.sqrt(2)-Math.sqrt(2)*Math.PI*500+3000*Math.sqrt(2));
+		    scene.add(x);
+       }
+	}
+	function drawPlane()
+	{
+       for(i=0;i<100;i++)
+       {
+       	    for(j=0;j<100;j++)
+       	    {
+                  var n=new THREE.CubeGeometry(5,5,5);
+	            var m = new THREE.MeshBasicMaterial({color: 0x990000});
+			    var x=new THREE.Mesh(n,m);
+			    x.position.set(i*20,j*20,(6000-i-2*j)/3);
+			    scene.add(x);
+       	    }
+           
        }
 	}
