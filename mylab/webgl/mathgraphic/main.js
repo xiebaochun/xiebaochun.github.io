@@ -105,7 +105,7 @@
 	}
 	function drawLine()
 	{
-       for(i=0;i<300;i++)
+       for(i=0;i<3000;i++)
        {
             var n=new THREE.CubeGeometry(5,5,5);
             var m = new THREE.MeshBasicMaterial({color: 0x000000});
@@ -116,7 +116,7 @@
 	}
 	function drawLineK()
 	{
-       for(i=0;i<300;i++)
+       for(i=0;i<3000;i++)
        {
             var n=new THREE.CubeGeometry(5,5,5);
             var m = new THREE.MeshBasicMaterial({color: 0x000000});
