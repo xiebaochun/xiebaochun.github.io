@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        var cateList=["design","front-end","android","symbian","linux","hardware","basis"];
+        var cateList=["design","front-end","android","symbian","linux","hardware","basis","law"];
         //alert(cateList[0]);
 	    //console.log("enter jquery ready");
         $("#left_nav li").each(function(){
