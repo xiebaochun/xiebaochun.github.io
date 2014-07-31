@@ -1,5 +1,6 @@
 $(document).ready(function(){
-        var cateList=["design","front-end","android","symbian","linux","hardware","basis","law","universityBasis"];
+        var cateList=["design","front-end","android","symbian","linux","hardware","computerbasis","law","universityBasis"];
+        var category="";
         //alert(cateList[0]);
 	    //console.log("enter jquery ready");
         $("#left_nav li").each(function(){
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	                   $(this).addClass("right_border_gray");
                             //alert($("#left_nav li").index(this));
                             getContent("../../ebook/pdf/"+cateList[$("#left_nav li").index(this)]+".html");
+                            category=cateList[$("#left_nav li").index(this)]+"_ebooks";
 	        		},function(){
 	        			//console.log("out hover");
 	                   // $(this).removeClass("left_border_red");
@@ -53,7 +55,7 @@ $(document).ready(function(){
                          $(this).click(function(){
                             // alert("haha");
                             // alert($(this).children().eq(0).html());
-                             document.cookie = "name="+$(this).children().eq(0).html()+";path=/";  
+                             document.cookie = "name="+category+"/"+$(this).children().eq(0).html()+";path=/";  
                              window.open("../../ebook/pdf/pdf.js/web/viewer.html");
                          });
                           
