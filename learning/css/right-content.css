@@ -33,8 +33,8 @@
 }
 .right-content .item:hover{
 	border-left: 8px solid #777;
-	box-shadow:2px 1px 5px #ff5b97;
-	color:#ff5b97;
+	box-shadow:2px 1px 5px #777;
+	color:#222;
 }
 .right-content .item p{
    
