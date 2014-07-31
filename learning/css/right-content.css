@@ -8,6 +8,7 @@
 		position:relative;
 		left:-1px;
 		width:998px;
+		min-height: 800px;
 		height:auto;
 		overflow:visible;
 		border:1px solid #ccc;
