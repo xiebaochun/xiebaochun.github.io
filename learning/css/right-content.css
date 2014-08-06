@@ -6,8 +6,8 @@
 }
 .right-content{
 		position:relative;
-		left:-1px;
-		width:998px;
+		left:20px;
+		width:910px;
 		min-height: 800px;
 		height:auto;
 		overflow:visible;
