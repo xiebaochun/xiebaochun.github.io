@@ -7,9 +7,9 @@
 
 .primary_nav{
 	position: relative;
-	width: 200px;
+	width: 260px;
 	/*height:300px;*/
-	background: #eee;
+	background: #edeff0;
 	float: left;
 	border-top: 1px solid #ccc;
 	z-index: 1;
@@ -26,12 +26,12 @@
 }
 .primary_nav ul li{
     text-align: center;
-	background: #eee;
+	background: #edeff0;
 	padding: 10px;
 	color: #2b2b2b;
 	font: 14px/1.0 "Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
-	border: 1px solid #ccc;
-	border-top: 0px solid #ccc;
+	border: 1px solid #ddd;
+	border-top: 0px solid #ddd;
 }
 .primary_nav ul li:hover{
 
@@ -51,12 +51,12 @@
 .design_wrap{
 
 	position: relative;
-	background: #eee;
-	width: 900px;
+	background: #edeff0;;
+	width: 910px;
     min-height:500px;
 	float: left;
-	left:50px;
-	border: 1px solid #ccc;
+	left:20px;
+	border: 1px solid #edeff0;
 
 }
 .design_wrap img{
