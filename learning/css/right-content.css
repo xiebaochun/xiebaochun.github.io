@@ -1,11 +1,12 @@
 
 .right_border_gray{
-    border-right: 1px solid #fff !important;
+    /*border-right: 1px solid #fff !important;*/
     background: #fff !important;	
     color: #ff5b97;
 }
 .right-content{
 		position:relative;
+		background: #edeff0;
 		left:20px;
 		width:910px;
 		min-height: 800px;
