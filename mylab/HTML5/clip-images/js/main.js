@@ -113,7 +113,10 @@ document.onmouseup=function(e){
    console.log(mouseState);
 }
 function updateMiddleClip(){
-	middlelayer.style.clip="rect("+(selectBox.offsetTop-bottomLayer.offsetTop)+"px,"+(selectBox.offsetLeft-bottomLayer.offsetLeft+selectBox.offsetWidth)+"px,"+(selectBox.offsetTop-bottomLayer.offsetTop+selectBox.offsetHeight)+"px,"+(selectBox.offsetLeft-bottomLayer.offsetLeft)+"px)";
+	middlelayer.style.clip="rect("+(selectBox.offsetTop-bottomLayer.offsetTop)+"px,"+(selectBox.offsetLeft-bottomLayer.offsetLeft+selectBox.offsetWidth)+"px,"+(selectBox.offsetTop-bottomLayer.offsetTop+selectBox.offsetHeight)+"px,"+(selectBox.offsetLeft-bottomLayer.offsetLeft)+"px)"
+
+	preViewImg.style.width=selectBox.style.width;
+	preViewImg.style.height=selectBox.style.height;
 	preViewImg.style.background="url(images/image1.jpg) no-repeat -"+(selectBox.offsetLeft-bottomLayer.offsetLeft)+"px "+"-"+(selectBox.offsetTop-bottomLayer.offsetTop)+"px";
 
 }

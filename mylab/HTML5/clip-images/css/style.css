@@ -101,7 +101,7 @@ body{
 	position: absolute;
 	left: 900px;
 	top:100px;
-	width: 100px;
+	/*width: 100px;*/
 	background: #89c;
 }
 #preViewImg{
@@ -109,5 +109,5 @@ body{
 	height: 200px;
 	background: url(../images/image1.jpg);
 	background-repeat:no-repeat;
-	background-position:-100px -200px; 
+	background-position:0px 0px; 
 }
