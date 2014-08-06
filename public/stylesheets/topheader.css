@@ -19,7 +19,7 @@ ol,ul {
 }
 #topheader {
 	width: 100%;
-	position:fixed;  
+	/*position:fixed;  */
     margin:0 auto;  
     left:0;  
     right:0;
