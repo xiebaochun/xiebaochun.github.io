@@ -14,8 +14,11 @@ ol,ul {
 	
 }
 .left-col,.mid-col{
-	margin-top:150px;
+	/*margin-top:150px;*/
 
+}
+.left-col{
+	
 }
 #topheader {
 	width: 100%;
