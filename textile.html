@@ -23,24 +23,26 @@
         $(function () {  
             $(window).scroll(function(){  
                 if ($(window).scrollTop()>100){  
-                    $("#back-to-top").fadeIn(1500);  
+                    $("#back-to-top").fadeIn(500);  
                 }  
                 else  
                 {  
-                    $("#back-to-top").fadeOut(1500);  
+                    $("#back-to-top").fadeOut(500);  
                 }  
             });  
   
             //当点击跳转链接后，回到页面顶部位置  
   
             $("#back-to-top").click(function(){  
-                $('body,html').animate({scrollTop:0},1000);  
+                $('body,html').animate({scrollTop:0},500);  
                 return false;  
             });  
         });  
     });  
 </script>
-    
+
+    <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p> 
+
     <div id="header">
        <div class="info_wrap wrap">
            <div class="info_show">
@@ -159,7 +161,7 @@ $("#textile").addClass("c");
 
             <img src="http://git.oschina.net/juerry/websiteimages/raw/master/design/graphicdesign/qingxizhejianglunyilanqiu.jpg"></img>
 	    </div>
-        <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p>  
+
 	</div>
 <div>
 
