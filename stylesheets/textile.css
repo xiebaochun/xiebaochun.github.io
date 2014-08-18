@@ -77,7 +77,7 @@ p#back-to-top a{
     text-decoration:none;
     color:#d1d1d1;
     display:block;
-    width:64px;
+    width:35px;
     /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
     -moz-transition:color 1s;
     -webkit-transition:color 1s;
