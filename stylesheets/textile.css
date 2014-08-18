@@ -69,7 +69,7 @@ p#back-to-top{
     position:fixed;
     display:none;
     bottom:100px;
-    right:80px;
+    right:2px; 
     z-index: 2;
 }
 p#back-to-top a{
@@ -87,7 +87,7 @@ p#back-to-top a:hover{
     color:#979797;
 }
 p#back-to-top a span{
-    background: url(http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png);
+    
     border-radius:6px;
     display:block;
     height:64px;
@@ -98,6 +98,10 @@ p#back-to-top a span{
     -webkit-transition:background 1s;
     -o-transition:background 1s;
 }
+p#back-to-top a span img{
+	height: 64px;
+    width: 56px;
+}
 #back-to-top a:hover span{
-    background: url(http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png);
+    
 }
