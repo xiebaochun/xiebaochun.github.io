@@ -70,6 +70,30 @@ master 和source其实是github仓库的分支，master是github默认的一个�
     
 <link href="/public/stylesheets/topheader.css" media="screen, projection" rel="stylesheet" type="text/css">
 <div id="topheader">
+        <script type="text/javascript">
+                $(function(){  
+                //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+                $(function () {  
+                    $(window).scroll(function(){  
+                        if ($(window).scrollTop()>100){  
+                            $("#back-to-top").fadeIn(500);  
+                        }  
+                        else  
+                        {  
+                            $("#back-to-top").fadeOut(500);  
+                        }  
+                    });  
+          
+                    //当点击跳转链接后，回到页面顶部位置  
+          
+                    $("#back-to-top").click(function(){  
+                        $('body,html').animate({scrollTop:0},500);  
+                        return false;  
+                    });  
+                });  
+            });  
+       </script>
+       <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p> 
        <div class="info_wrap wrap">
            <div class="info_show">
                 <i class="fl s_line"></i>
@@ -128,7 +152,7 @@ master 和source其实是github仓库的分支，master是github默认的一个�
                         <a href="">插件</a>
                     </li>
                     <li class="nav_item">
-                        <a href="" >自习室</a>
+                        <a href="http://xiebaochun.github.io/learning/index.html" >自习室</a>
                     </li>
                     <li class="nav_item">
                         <a href="http://xiebaochun.github.io/mylab/index.html" >实验室</a>
