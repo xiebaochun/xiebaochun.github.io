@@ -70,6 +70,7 @@ p#back-to-top{
     display:none;
     bottom:100px;
     right:80px;
+    z-index: 2;
 }
 p#back-to-top a{
     text-align:center;
