@@ -10,6 +10,7 @@
           //console.log(data);
         //add footer.html to the footer dom
         $("#header").html(data);
+        //给导航栏添加焦点
         navFocus();
 	}).fail(function(){
 		console.log("get header.html fail!");
