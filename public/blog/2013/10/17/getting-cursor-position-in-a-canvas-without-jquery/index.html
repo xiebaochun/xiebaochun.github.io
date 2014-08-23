@@ -27,7 +27,6 @@ var rect = canvas.getBoundingClientRect &hellip;">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
 	<script src="/public/javascripts/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="http://xiebaochun.github.io/common/common.js">
 	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <!-- <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"> -->
@@ -72,29 +71,41 @@ var rect = canvas.getBoundingClientRect &hellip;">
 <link href="/public/stylesheets/topheader.css" media="screen, projection" rel="stylesheet" type="text/css">
  <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p> 
  <script type="text/javascript">
-                $(function(){  
-                //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
-                $(function () {  
-                    $(window).scroll(function(){  
-                        if ($(window).scrollTop()>100){  
-                            $("#back-to-top").fadeIn(500);  
-                        }  
-                        else  
-                        {  
-                            $("#back-to-top").fadeOut(500);  
-                        }  
-                    });  
-          
-                    //当点击跳转链接后，回到页面顶部位置  
-          
-                    $("#back-to-top").click(function(){  
-                        $('body,html').animate({scrollTop:0},500);  
-                        return false;  
-                    });  
-                });  
-            });  
-       </script>
-<div id="topheader">           
+        $(function() {
+            //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 100) {
+                        $("#back-to-top").fadeIn(500);
+                    } else {
+                        $("#back-to-top").fadeOut(500);
+                    }
+                });
+
+                //当点击跳转链接后，回到页面顶部位置  
+                $("#back-to-top").click(function() {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    },
+                    500);
+                    return false;
+                });
+            });
+        });
+
+        $.get("http://xiebaochun.github.io/common/header.html",function(data){
+              //console.log(data);
+            //add footer.html to the footer dom
+            $("#topheader").html(data);
+            //给导航栏添加焦点
+            navFocus();
+        }).fail(function(){
+            console.log("get header.html fail!");
+        });
+    </script>
+<div id="topheader">
+    
+    
 </div>
 
 	<div style="min-width:100px;"class="container wrap">
