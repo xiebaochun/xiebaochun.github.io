@@ -10,6 +10,7 @@
           //console.log(data);
         //add footer.html to the footer dom
         $("#header").html(data);
+        navFocus();
 	}).fail(function(){
 		console.log("get header.html fail!");
 	});
