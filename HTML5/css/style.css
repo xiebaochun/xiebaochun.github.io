@@ -1,0 +1,18 @@
+.product_wrap{
+
+	
+	padding: 20px;
+}
+.product_inside{
+	
+	height:300px;
+	margin: 10px;
+	
+}
+.product_top_tab{
+	height:50px;
+	border-bottom: 1px solid #333;
+}
+.product_title{
+	line-height: 50px;
+}

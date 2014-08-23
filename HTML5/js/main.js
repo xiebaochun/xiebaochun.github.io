@@ -14,4 +14,34 @@ $(document).ready(function(){
 	        		}
         	);
         });
+	
+	 var isTouched=false;
+         $(window).scroll(function(){  
+                if ($(".primary_nav").offset().top-$(window).scrollTop()<5){ 
+                   if(isTouched==false){
+                    isTouched=true;
+                     console.log($(".primary_nav").offset().top);
+                    $(".primary_nav").css({"position":"fixed","top":"5px"});
+                   } 
+                    
+                }  
+                if ($(window).scrollTop()<160){ 
+                   if(isTouched==true){
+                    isTouched=false;
+                     console.log($(".primary_nav").offset().top);
+                    $(".primary_nav").css({"position":"relative","top":"0px"});
+                   } 
+                    
+                }  
+                // else  
+                // {  
+                //   if(isTouched==true){
+                //     isTouched=false;
+                //      console.log($(".primary_nav").offset().top);
+                //     $(".primary_nav").css({"position":"relative","top":"0px"});
+                //    } 
+                //      // $(".primary_nav").css({"position":"relative","top":"5px"});
+                // }  
+                
+            });  
 });
