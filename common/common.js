@@ -15,4 +15,5 @@
 	}).fail(function(){
 		console.log("get header.html fail!");
 	});
+	
 });
