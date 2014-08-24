@@ -44,4 +44,35 @@ $(document).ready(function(){
                 // }  
                 
             });  
+    $(".product_item_title").click(function(){
+        var self=this;
+        // if($(this).parent().height()<300){
+        //     $(self).children(".product_item_title_right").html("V");
+        //     $(this).parent().animate({height:"300px"},null,function(){
+            
+        //     });
+        // }else{
+        //     $(self).children(".product_item_title_right").html(">");
+        //     $(this).parent().animate({height:"31px"},null,function(){
+            
+        //     });
+        // }
+        if($(this).parent().height()<300){
+           
+
+            $(".product_item").animate({height:"31px"},200,function(){
+
+                $(this).children(".product_item_title").children(".product_item_title_right").html(">");
+                $(this).children(".product_item_title").css({"border-bottom":"1px solid #dedede","color":"#aaa"});
+
+                $(self).children(".product_item_title_right").html("V");
+                $(self).css({"border-bottom":"1px solid #fedede","color":"#777"});
+                 $(self).parent().animate({height:"300px"},500,function(){
+                       
+                 });
+
+                });
+        }
+
+    });
 });
