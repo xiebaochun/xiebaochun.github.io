@@ -44,7 +44,7 @@
 	height: 30px;
 	line-height: 30px;
 	margin-left: 10px;
-
+    cursor: pointer;
 	display: inline;
 }
 .product_item_title_right{
