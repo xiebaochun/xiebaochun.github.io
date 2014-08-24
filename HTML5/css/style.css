@@ -39,6 +39,9 @@
 	color: #aaa;
 	border-bottom: 1px solid #dedede;
 }
+/*.product_item_title:hover{
+	background: #fff5f5;
+}*/
 .product_item_title_left{
     width: 100px;
 	height: 30px;
