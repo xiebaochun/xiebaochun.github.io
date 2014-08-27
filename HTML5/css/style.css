@@ -67,3 +67,38 @@
 	height: 200px;
 	display: inline;
 }
+.product_list{
+    position: relative;
+	
+	background: #900;
+}
+.product_list .product_list_item{
+	display: inline-block;
+	position: absolute;
+	left: 850px;
+	top: 0px;
+}
+.product_shortcut{
+	margin:30px;
+}
+.arroy{
+	font-size: 50px;
+	color: rgba(200,200,200,0.3);
+	position: relative;
+	
+	cursor: pointer;
+	z-index: 1;
+}
+.arroy:hover{
+	color: #f99;
+}
+.arroy_left{
+    width: 50px;
+	margin-top: 100px;
+   margin-left: 50px;
+}
+.arroy_right{
+	width: 50px;
+	margin-top: -80px;
+   margin-left: 800px;
+}

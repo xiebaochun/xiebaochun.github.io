@@ -71,7 +71,8 @@ $(document).ready(function(){
         if(height<32){
            
             //forech all product_item,if which height large than 31px then scale down it
-            $("#front-end .product_item").each(function(){
+            //$("#front-end .product_item").each(function(){
+            $(this).parent().parent().children(".product_item").each(function(){    
                 // console.log(this);
                 if($(this).height()>31){
                    $(this).animate({height:"31px"},200,function(){
@@ -96,5 +97,36 @@ $(document).ready(function(){
                  });
             }
 
+    });
+
+   //////////////////////////////////////////////////////////////////左右自动切换
+   var listLength=2;
+   var index=0;
+   var temp=null;
+    $(".arroy_right").click(function(){
+
+        if(index<listLength-1&&temp!=index){
+             temp=index;
+            $(".product_list").children(".product_list_item:eq("+index+")").animate({"left":"-850px"},null,function(){
+                 index++;
+            });
+            $(".product_list").children(".product_list_item:eq("+(index+1)+")").animate({"left":"0px"},null,function(){
+                 
+            });
+        }
+          
+    });
+    $(".arroy_left").click(function(){
+        if(index>0&&temp!=index)
+        {
+            temp=index;
+            $(".product_list").children(".product_list_item:eq("+(index)+")").animate({"left":"850px"},null,function(){
+             index--;
+            });
+           $(".product_list").children(".product_list_item:eq("+(index-1)+")").animate({"left":"0px"},null,function(){
+             
+            });
+        }
+        
     });
 });
