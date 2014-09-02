@@ -27,7 +27,7 @@
 .primary_nav ul li{
     text-align: center;
 	background: #edeff0;
-	padding: 10px;
+	/*padding: 10px;*/
 	color: #2b2b2b;
 	font: 14px/1.0 "Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
 	border: 1px solid #dedede;
@@ -37,10 +37,15 @@
 
 	/*background: #ddd;*/
 	color: #ff5b97;
-	padding: 10px;
+	
 	
 	font: 14px/1.0 "Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
     cursor:pointer;
+}
+.primary_nav ul li a{
+	
+	display: block;
+	line-height: 30px;
 }
 .left_border_red{
 	color: #ff5b97 !important;
