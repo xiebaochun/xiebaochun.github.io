@@ -100,7 +100,7 @@ $(document).ready(function(){
     });
 
    //////////////////////////////////////////////////////////////////左右自动切换
-   var listLength=2;
+   var listLength=3;
    var index=0;
    var temp=null;
     $(".arroy_right").click(function(){
