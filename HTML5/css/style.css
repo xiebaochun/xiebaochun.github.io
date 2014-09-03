@@ -79,9 +79,13 @@
 	top: 0px;
 }
 .product_shortcut{
+	
+	margin:30px;
+}
+.product_shortcut img{
 	width: 450px;
 	height: 200px;
-	margin:30px;
+	
 }
 .arroy{
 	font-size: 50px;
