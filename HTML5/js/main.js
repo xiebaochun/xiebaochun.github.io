@@ -100,33 +100,36 @@ $(document).ready(function(){
     });
 
    //////////////////////////////////////////////////////////////////左右自动切换
-   var listLength=3;
-   var index=0;
-   var temp=null;
-    $(".arroy_right").click(function(){
 
-        if(index<listLength-1&&temp!=index){
-             temp=index;
-            $(".product_list").children(".product_list_item:eq("+index+")").animate({"left":"-850px"},null,function(){
-                 index++;
-            });
-            $(".product_list").children(".product_list_item:eq("+(index+1)+")").animate({"left":"0px"},null,function(){
+   $("#game_item").itemScroll();
+    $("#app_item").itemScroll();
+   // var listLength=3;
+   // var index=0;
+   // var temp=null;
+   //  $(".arroy_right").click(function(){
+
+   //      if(index<listLength-1&&temp!=index){
+   //           temp=index;
+   //          $(this).parent().children(".product_list").children(".product_list_item:eq("+index+")").animate({"left":"-850px"},null,function(){
+   //               index++;
+   //          });
+   //          $(this).parent().children(".product_list").children(".product_list_item:eq("+(index+1)+")").animate({"left":"0px"},null,function(){
                  
-            });
-        }
+   //          });
+   //      }
           
-    });
-    $(".arroy_left").click(function(){
-        if(index>0&&temp!=index)
-        {
-            temp=index;
-            $(".product_list").children(".product_list_item:eq("+(index)+")").animate({"left":"850px"},null,function(){
-             index--;
-            });
-           $(".product_list").children(".product_list_item:eq("+(index-1)+")").animate({"left":"0px"},null,function(){
+   //  });
+   //  $(".arroy_left").click(function(){
+   //      if(index>0&&temp!=index)
+   //      {
+   //          temp=index;
+   //          $(this).parent().children(".product_list").children(".product_list_item:eq("+(index)+")").animate({"left":"850px"},null,function(){
+   //           index--;
+   //          });
+   //          $(this).parent().children(".product_list").children(".product_list_item:eq("+(index-1)+")").animate({"left":"0px"},null,function(){
              
-            });
-        }
+   //          });
+   //      }
         
-    });
+   //  });
 });
