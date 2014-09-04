@@ -101,7 +101,7 @@ $(document).ready(function(){
 
    //////////////////////////////////////////////////////////////////左右自动切换
 
-   $("#game_item").itemScroll();
+   $("#game_item").itemScroll({currentIndex:1});
     $("#app_item").itemScroll();
    // var listLength=3;
    // var index=0;
