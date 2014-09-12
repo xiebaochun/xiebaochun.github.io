@@ -102,7 +102,11 @@ $(document).ready(function(){
    //////////////////////////////////////////////////////////////////左右自动切换
 
    $("#game_item").itemScroll({currentIndex:1});
-    $("#app_item").itemScroll();
+    $("#app_item").itemScroll({
+      isAutoPlay:false,
+      speed:200,
+      indexBlockColor:{hightlight:"#f33",normal:"#9f9"},
+    });
    // var listLength=3;
    // var index=0;
    // var temp=null;
