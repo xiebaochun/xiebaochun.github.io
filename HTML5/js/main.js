@@ -2,8 +2,8 @@ define(function(require){
   var $ = require('jquery');
   require('jquery.itemscroll');
   require('../../common/common');
-  $("#html5").addClass("c");
   $(document).ready(function(){
+    $("#html5").addClass("c");
     $("#nav_01").addClass("left_border_red");
 
     $("#left_nav li").each(function(){
