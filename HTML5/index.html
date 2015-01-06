@@ -206,22 +206,19 @@
       </div>
     <div>
     <div id="foot_wrap" class="foot_wrap"></div>
-    <script data-main="js/app" src="../base/js/require.js"></script>
+    <!-- Use the requireJS to load the modules -->
+    <script src="../base/js/require.js"></script>
     <script>
-       
-      // requirejs(["js/main"]);
-      // requirejs.config({
-      //   baseUrl: '',
-      //       paths: {
-      //           app: '../app'
-      //       }
-      //   });
-      
+      requirejs.config({
+          baseUrl: 'lib',
+          paths: {
+              js: '../js'
+          }
+      });
+      // Start loading the main app file. Put all of
+      // your application logic in there.
+      requirejs(['js/main']);
     </script>
-     <!-- <script type="text/javascript" src="../javascripts/jquery-1.7.2.min.js"></script>
-     <script type="text/javascript" src="../common/common.js"></script> -->
-      <!-- <script type="text/javascript" src="js/jquery.itemscroll.js"></script> -->
-      <!-- <script type="text/javascript" src="js/main.js"></script> -->
     <!-- Baidu Button BEGIN -->
      <!-- <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;pos=right&amp;uid=0" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=389859"></script> -->
     <!-- Baidu Button END -->

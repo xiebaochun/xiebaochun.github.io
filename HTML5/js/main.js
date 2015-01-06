@@ -1,10 +1,11 @@
 define(function(require){
   var $ = require('jquery');
-  $(document).ready(function(){
-    function navFocus(){
+  require('jquery.itemscroll');
+  require('../../common/common');
+  function navFocus(){
       $("#html5").addClass("c");
     }
-
+  $(document).ready(function(){
     $("#nav_01").addClass("left_border_red");
 
     $("#left_nav li").each(function(){
