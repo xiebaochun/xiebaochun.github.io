@@ -23,7 +23,7 @@
 	        $("#header").html(data);
 	        //给导航栏添加焦点
 	        if(typeof navFocus != "undefined"){
-	          navFocus();	
+	          navFocus($);	
 	        }
 		}).fail(function(){
 			console.log("get header.html fail!");

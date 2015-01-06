@@ -3,9 +3,7 @@ define(function(require){
   require('jquery.itemscroll');
   require('../../common/common');
   $(document).ready(function(){
-    $("#html5").addClass("c");
     $("#nav_01").addClass("left_border_red");
-
     $("#left_nav li").each(function(){
       $(this).click(function(){
         $("#left_nav li").each(function(){
