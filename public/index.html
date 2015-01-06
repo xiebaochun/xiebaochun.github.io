@@ -18,38 +18,6 @@
   </head>
   <body>
     <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p> 
-    <script type="text/javascript">
-      $(function() {
-        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
-        $(function() {
-          $(window).scroll(function() {
-            if ($(window).scrollTop() > 100) {
-                $("#back-to-top").fadeIn(500);
-            } else {
-                $("#back-to-top").fadeOut(500);
-            }
-          });
-
-          //当点击跳转链接后，回到页面顶部位置  
-          $("#back-to-top").click(function() {
-            $('body,html').animate({
-                scrollTop: 0
-            },
-            500);
-            return false;
-          });
-        });
-      });
-      $.get("http://xiebaochun.github.io/common/header.html",function(data){
-            //console.log(data);
-          //add footer.html to the footer dom
-          $("#topheader").html(data);
-          //给导航栏添加焦点
-          $("#nav_resume").addClass("c");
-      }).fail(function(){
-          console.log("get header.html fail!");
-      });
-    </script>
   <div id="topheader"></div>
 	<div style="min-width:100px;"class="container wrap">    
 		<div class="left-col">
@@ -196,347 +164,139 @@ loader.load(‘model.js’, function (geometry, materials) {
 
 <p>roman01la posted this
 Ashley theme by Jxnblk</p>
-
-		
-		
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2014-06-30T14:53:00+08:00" data-updated="true" itemprop="datePublished">Jun 30<span>th</span>, 2014</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
 </div>
-		
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2014/06/30/webgl-with-three-dot-js-basics/" itemprop="url">webgl_with_three.js:basicst(three.js基础入门）</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p>先来一段废话：3D graphics in the browser have been a hot topic ever since it was first introduced. But if you were to create your apps using plain WebGL, it would take ages. This is exactly why some really useful libraries have recently came about. Three.js is one of the most popular, and in this series I will show you how best to use it in order to create stunning 3D experiences for your users.</p>
-
 <p>Before we begin, I do expect you to have a basic understanding of 3D space before you start reading this tutorial, as I won’t be explaining stuff like coordinates, vectors, etc.</p>
-
-
-		
 		<a href="/public/blog/2014/06/30/webgl-with-three-dot-js-basics/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2014-06-29T21:22:00+08:00" data-updated="true" itemprop="datePublished">Jun 29<span>th</span>, 2014</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2014/06/29/webgl-with-the-three-dot-js-models-and-animation/" itemprop="url">webgl之three.js模型和动画</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p>自从3d图形被引入浏览器，浏览器中的3D图形开发就变成一个热门的话题。但是如果你直接使用原始的webgl api来开发应用将会很费劲。因此诞生了很多与之相关的类库。three.js是最流行的一个，在此文中我将介绍它。</p>
-
 <p><a href="http://xiebaochun.github.io/mylab/webgl/webgl-models-animation/final/">在线演示</a> <a href="https://github.com/xiebaochun/webgl-models-animation">源码下载</a></p>
-
-<p>在开始本文之前，我默认你已经具有了3D空间的基本知识，比如坐标和向量等。
-
-		
+<p>在开始本文之前，我默认你已经具有了3D空间的基本知识，比如坐标和向量等。	
 		<a href="/public/blog/2014/06/29/webgl-with-the-three-dot-js-models-and-animation/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2014-06-27T19:59:00+08:00" data-updated="true" itemprop="datePublished">Jun 27<span>th</span>, 2014</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2014/06/27/javascript-operating-mechanisim-execution-sequnece/" itemprop="url">Javascript运行机制及其执行顺序</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p>在前端开发领域已有些年头了，对javascript的认识也逐渐清晰明朗，在不同时期对任何事物都有不同的了解，或程度上，或性质上。今天写一下我对javascript运行机制的一些总结。</p>
-
 <p>javascript的性质：描述性脚本语言，直接由browser动态解析执行。</p>
-
-<p>那么js的解析原理和执行顺序是怎么样的呢？在此先了解一下基本的一些概念。</p>
-
-
-		
+<p>那么js的解析原理和执行顺序是怎么样的呢？在此先了解一下基本的一些概念。</p>	
 		<a href="/public/blog/2014/06/27/javascript-operating-mechanisim-execution-sequnece/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-11-11T14:00:00+08:00" data-updated="true" itemprop="datePublished">Nov 11<span>th</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/11/11/e-commerce-website-designs-2013/" itemprop="url">2013电商网站设计（E-Commerce Website Designs 2013）</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p><img src="http://www.script-tutorials.com/demos/365/thumb.png" alt="" /></p>
-
 <p>原文地址：<a href="http://www.script-tutorials.com/e-commerce-website-designs-2013/">http://www.script-tutorials.com/e-commerce-website-designs-2013/</a></p>
-
-<p>译者：微个日光日</p>
-
-
-		
+<p>译者：微个日光日</p>	
 		<a href="/public/blog/2013/11/11/e-commerce-website-designs-2013/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-11-04T14:39:00+08:00" data-updated="true" itemprop="datePublished">Nov 4<span>th</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/11/04/whirling-css3-dropdown-menu/" itemprop="url">制作旋转CSS3下拉菜单（whirling CSS3 Dropdown Menu）</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p><img src="http://www.script-tutorials.com/demos/364/thumb.png" alt="" /></p>
-
 <p>原文地址：<a href="http://www.script-tutorials.com/whirling-dropdown-menu/">http://www.script-tutorials.com/whirling-dropdown-menu/</a></p>
-
-<p>译者：<a href="http://xiebaochun.github.io/">微个日光日</a></p>
-
-
-		
+<p>译者：<a href="http://xiebaochun.github.io/">微个日光日</a></p>		
 		<a href="/public/blog/2013/11/04/whirling-css3-dropdown-menu/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-10-30T16:54:00+08:00" data-updated="true" itemprop="datePublished">Oct 30<span>th</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>		
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/10/30/learning-sites-collection/" itemprop="url">（学习网址大全）learning Sites Collection</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>更新by：me</p>
-
-
-		
+		<p>更新by：me</p>	
 		<a href="/public/blog/2013/10/30/learning-sites-collection/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-10-30T11:02:00+08:00" data-updated="true" itemprop="datePublished">Oct 30<span>th</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/10/30/html5-audio-player-with-playlist/" itemprop="url">制作HTML5音频播放器（HTML5 Audio Player With Playlist）</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p><img src="https://raw.githubusercontent.com/xiebaochun/juerryimages/master/html5/audioplayer/bg.jpg" alt="" /></p>
-
-<p>也许对于很多人来说这是人生中第一次制作音频播放器。通常你会选择一个可用的播放器，一般是flash播放器。但是你也许已经发现，flash播放器在移动设备（如iPhone/Android)上不能很好的工作。今天，我将教你如何使用HTML5技术制作你自己的音频播放器。这个播放器包含了以下元素：title(标题），author(作家），cover（封面），基本的控制（播放/暂停，前进/后退），两个滑动条（jQuery UI sliders）:音量滑动条和一个歌曲跟踪器(song tracker)，还有一个歌曲列表。
-
-		
+<p>也许对于很多人来说这是人生中第一次制作音频播放器。通常你会选择一个可用的播放器，一般是flash播放器。但是你也许已经发现，flash播放器在移动设备（如iPhone/Android)上不能很好的工作。今天，我将教你如何使用HTML5技术制作你自己的音频播放器。这个播放器包含了以下元素：title(标题），author(作家），cover（封面），基本的控制（播放/暂停，前进/后退），两个滑动条（jQuery UI sliders）:音量滑动条和一个歌曲跟踪器(song tracker)，还有一个歌曲列表。	
 		<a href="/public/blog/2013/10/30/html5-audio-player-with-playlist/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-10-22T17:13:00+08:00" data-updated="true" itemprop="datePublished">Oct 22<span>nd</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/10/22/unifying-touch-and-mouse-how-pointer-envents-will-make-cross-browser-touch-support-easy/" itemprop="url">Unifying Touch and Mouse:how Pointer Envents Will Make Cross-browser Touch Support Easy</a></h1>
 	<div class="entry-content" itemprop="articleBody">
 		<p><img src="http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-01-10-46-metablogapi/4300.clip_5F00_image001_5F00_thumb_5F00_4E7D303E.png" alt="" /></p>
-
 <p>原文地址：<a href="http://blogs.msdn.com/b/davrous/archive/2013/10/21/handling-touch-in-your-html5-apps-thanks-to-the-pointer-events-of-ie10-and-windows-8.aspx">http://blogs.msdn.com/b/davrous/archive/2013/10/21/handling-touch-in-your-html5-apps-thanks-to-the-pointer-events-of-ie10-and-windows-8.aspx</a></p>
-
-<p>我经常听到这样的问题”手机和平板上这么多触控功能，我要从哪开始着手研究”,还有“开发一个触控输入最简单的方法是什么？”答案是：“很复杂。”</p>
-
-
-		
+<p>我经常听到这样的问题”手机和平板上这么多触控功能，我要从哪开始着手研究”,还有“开发一个触控输入最简单的方法是什么？”答案是：“很复杂。”</p>	
 		<a href="/public/blog/2013/10/22/unifying-touch-and-mouse-how-pointer-envents-will-make-cross-browser-touch-support-easy/" class="more-link">继续阅读&rarr;</a>
 	</div>
-
 </article>
-
-
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
 		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
 <time datetime="2013-10-17T14:37:00+08:00" data-updated="true" itemprop="datePublished">Oct 17<span>th</span>, 2013</time></div>
 		<div class="tags">
-
-
 	<a class='category' href='/public/blog/categories/web/'>web</a>
-
-
-</div>
-		
+</div>	
 	</div>
 	<h1 class="title" itemprop="name"><a href="/public/blog/2013/10/17/getting-cursor-position-in-a-canvas-without-jquery/" itemprop="url">获取Canvas里的鼠标位置，不使用jquery</a></h1>
 	<div class="entry-content" itemprop="articleBody">
@@ -578,6 +338,38 @@ Design credit: <a href="http://xiebaochun.github.io">微个日光日</a></footer
 	  </div>
     <script src="/public/javascripts/jquery-1.7.2.min.js"></script>
     <script src="/public/javascripts/md5.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+        $(function() {
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                $("#back-to-top").fadeIn(500);
+            } else {
+                $("#back-to-top").fadeOut(500);
+            }
+          });
+
+          //当点击跳转链接后，回到页面顶部位置  
+          $("#back-to-top").click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            },
+            500);
+            return false;
+          });
+        });
+      });
+      $.get("http://xiebaochun.github.io/common/header.html",function(data){
+            //console.log(data);
+          //add footer.html to the footer dom
+          $("#topheader").html(data);
+          //给导航栏添加焦点
+          $("#nav_resume").addClass("c");
+      }).fail(function(){
+          console.log("get header.html fail!");
+      });
+    </script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
