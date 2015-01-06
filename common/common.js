@@ -22,7 +22,7 @@
 	        //add footer.html to the footer dom
 	        $("#header").html(data);
 	        //给导航栏添加焦点
-	        if(navFocus != undefined){
+	        if(typeof navFocus != "undefined"){
 	          navFocus();	
 	        }
 		}).fail(function(){
