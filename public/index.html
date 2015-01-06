@@ -15,35 +15,6 @@
   	<link href="/public/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
     <link href="/public/stylesheets/topheader.css" media="screen, projection" rel="stylesheet" type="text/css">
   	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  	<script src="/public/javascripts/jquery-1.7.2.min.js"></script>
-    <script src="/public/javascripts/md5.js"></script>
-    <script type="text/x-mathjax-config">
-
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-          }
-        });
-    </script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Queue(function() {
-            var all = MathJax.Hub.getAllJax(), i;
-            for(i=0; i < all.length; i += 1) {
-                all[i].SourceElement().parentNode.className += ' has-jax';
-            }
-        });
-    </script>
-    <script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
   </head>
   <body>
     <p id="back-to-top"><a href="#top"><span><img src="http://outofmemory.cn/ugc/upload/00/07/20121202/go-top-light-green.png"></span>回顶</a></p> 
@@ -605,5 +576,33 @@ Design credit: <a href="http://xiebaochun.github.io">微个日光日</a></footer
  -->
 		  </div>
 	  </div>
+    <script src="/public/javascripts/jquery-1.7.2.min.js"></script>
+    <script src="/public/javascripts/md5.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
   </body>
 </html>
