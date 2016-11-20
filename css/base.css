@@ -434,6 +434,17 @@ th {
 
 /***common.css***/
 
+/*display*/
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+.inline-block{
+    display: inline-block;
+}
+
 /*font-size*/
 .f10{font-size: 10px; }
 .f12{font-size: 12px; }
@@ -576,12 +587,21 @@ th {
 .color-eee{color:#eee !important;}
 .color-fff{color:#fff !important;}
 
+.bg-color-000{background-color:#000 !important;}
+.bg-color-333{background-color:#333 !important;}
+.bg-color-666{background-color:#666 !important;}
+.bg-color-999{background-color:#999 !important;}
+.bg-color-aaa{background-color:#aaa !important;}
+.bg-color-ccc{background-color:#ccc !important;}
+.bg-color-eee{background-color:#eee !important;}
+.bg-color-fff{background-color:#fff !important;}
+
+
 /*clear fix*/
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*+height:1%;}
 
-.clear-fixed{
-  
-}
+.fl{float: left;}
+.fr{float: right;}
 
 .bg-center{background-size: cover;background-position: center center;}
