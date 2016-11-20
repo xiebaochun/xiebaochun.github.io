@@ -1,0 +1,35 @@
+.recommend-sites{
+	min-height: 50px;
+	padding:5px 0;
+	border:1px solid #ccc;
+}
+.recommend-sites > .site-row{
+	padding:6px 6px 6px 0;
+}
+.recommend-sites > .site-row > h3{
+	float: left;
+	width:94px;
+	margin-right: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #ec6e00;
+	border-right: 1px solid #f5c3ae;
+	text-align: center;
+}
+.recommend-sites > .site-row > ul{
+	float: left;
+}
+.recommend-sites > .site-row > ul > li{
+	float: left;
+	height: 20px;
+	padding:0 8px;
+    /*width: 581px;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+}
+.recommend-sites > .site-row > ul > li:hover{
+	color:#303 !important;
+	text-decoration: underline;
+}
