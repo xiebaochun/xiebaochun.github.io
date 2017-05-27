@@ -1,11 +1,63 @@
 <%- include('inc/head') %>
 <%- include('inc/header') %>  
   <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <style type="text/css">
+      .post-item{
+        display: inline-block;
+        height: 200px;
+        width: 150px;
+        margin: 10px;
+        margin-right: 0;
+        background-color: #f5f5f5;
+        border: 1px solid #999;
+        border-radius: 3px;
+        box-sizing: border-box;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .post-item:hover{
+        background-color: #eee;
+      }
+      .post-item .title{
+        height: 180px;
+        line-height: 180px;
+        color: #666;
+      }
+      .post-item .title span{
+        display: inline-block;
+        line-height: normal;
+      }
+      .post-item .post-info{
+        padding: 0 5px;
+        line-height: 20px;
+        background-color: #999;
+        color: #fff;
+      }
+  </style>
   	<div class="wrap">
-  		<h2 style="line-height: 30px;">ADVERTISEMENT</h2>
-        <div class="clearfix" style="position:relative;height:450px;border:1px solid #ccc;">
-          
-        </div>
+  		<h2 style="line-height: 30px;">RECOMMEND POSTS</h2>
+      <div class=" clearfix" style="position:relative;height:450px;border:1px solid #ccc;">
+        <ul>
+          <li class="post-item">
+            <a href="http://xiebaochun.github.io/blog/posts/2016/09/01/Compiling,_Linking_and_Building.html">
+                <div class="title tc"><span class="vm">GCC 和 Make 编译，链接， 构建 c/c++ </span></div>
+                <div class="post-info">2016年03月01日</div>
+            </a>
+          </li>
+          <li class="post-item">
+            <a href="http://xiebaochun.github.io/blog/posts/2016/08/16/webpack%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8.html">
+                <div class="title tc"><span class="vm">webpack介绍及使用</span></div>
+                <div class="post-info">2017年05月23日</div>
+            </a>
+          </li>
+          <li class="post-item">
+            <a href="http://xiebaochun.github.io/blog/posts/2016/09/06/module-exports-vs-exports-in-node-js.html">
+                <div class="title tc"><span class="vm">module exports vs exports in nodejs</span></div>
+                <div class="post-info">2017年02月05日</div>
+            </a>
+          </li>
+        </ul>
+      </div>
   		<h2 style="line-height: 30px;">RECOMMENDS</h2>
         <div class="recommend-sites">
           <div class="site-row clearfix">
