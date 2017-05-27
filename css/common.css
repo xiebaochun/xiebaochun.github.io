@@ -18,7 +18,7 @@ a{
 .wrap{
 	width: 1000px;
 	margin: 0 auto;
-	color: #eee;
+	color: #ccc;
 }
 
 .top{
@@ -41,6 +41,10 @@ a{
 	display: block;
 	width: 80px;
 	text-align: center;
+}
+.top-nav > li > a:hover{
+	color: #eee;
+	background-color: #666;
 }
 
 footer{

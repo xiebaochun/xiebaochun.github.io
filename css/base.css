@@ -608,4 +608,7 @@ th {
 .fl{float: left;}
 .fr{float: right;}
 
+.tc{text-align: center;}
+.vm{vertical-align: middle;}
+
 .bg-center{background-size: cover;background-position: center center;}
