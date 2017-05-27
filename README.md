@@ -9,7 +9,7 @@
 `npm install`
 
 ## generate
-Use fellow command to generate the staic pages from src folder.
+Use fellow command to generate the staic pages from src folder and push to master branch & backup source files.
 
 `node publish`
 
