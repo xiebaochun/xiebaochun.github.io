@@ -51,3 +51,17 @@ footer{
 	line-height: 50px;
 	background-color: #333;
 }
+
+@media screen and (max-width: 660px){
+	.wrap{
+		width: 100%;
+	}
+	.recommend-sites > .site-row > ul{
+		padding-top: 5px;
+		padding-left: 13px;
+	}
+	.section{
+		border-left: none !important;
+		border-right: none !important;
+	}
+}
