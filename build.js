@@ -78,3 +78,5 @@ function mkdirsSync(dirpath, mode) {
     }
     return true; 
 }
+
+build();
